@@ -2,6 +2,7 @@ import './Header.css'
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 function Heading() {
     return (
         <div className="container">
@@ -25,21 +26,44 @@ function Heading() {
                     Menu
                 </div>
                 <div className="link_list">
-                    <div className="link_icon">
+                    <Link
+                        to=''
+                        className='link_icon'
+                    >
                         Trang chủ
-                    </div>
+                    </Link>
                     <div className="link_icon">
                         Giới thiệu
                     </div>
-                    <div className="link_icon">
+                    <Link
+
+                        to='contact'
+                        className='link_icon'
+                    >
                         Liên hệ
-                    </div>
-                    <div className="link_icon">
+                    </Link>
+
+                    <Link
+
+                        to='login'
+                        className='link_icon'
+                    >
                         Đăng nhập
-                    </div>
-                    <div className="link_icon">
-                        Đăng kí
-                    </div>
+                    </Link>
+                    <Link
+
+                        to='register'
+                        className='link_icon'
+                    >
+                        Đăng ký
+                    </Link>
+                    <Link
+
+                        to='register-new'
+                        className='link_icon'
+                    >
+                        Đăng ký new
+                    </Link>
 
                 </div>
             </div>

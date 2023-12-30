@@ -9,6 +9,7 @@ import img7 from '../img/main/img7.jpg'
 
 const ListYard = [
     {
+        id: 1,
         name: 'Sân A1',
         category: 7,
         state: 0,

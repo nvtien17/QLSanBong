@@ -1,19 +1,54 @@
 
-import { Routes, Route, Link } from 'react-router-dom'
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
 import './Grid.css'
 import './App.css';
 import Container from './Component/Container';
-import Order from './Component/Order/Order';
+import Layout from "./pages/layout/Layout";
+import Contact from "./pages/contact/Contact";
+import Login from "./pages/login/Login";
+import Register from "./pages/register/Register";
+import RegisterNew  from "./pages/RegisterNew/RegisterNew";
+
 function App() {
+  const router = createBrowserRouter([
+
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        {
+          path: "/",
+          element: <Container />
+        },
+        {
+          path: "/contact",
+          element: <Contact />
+        },
+        {
+          path: "/login",
+          element: <Login />
+        },
+        {
+          path: "/register",
+          element: <Register />
+        },
+        {
+          path: '/register-new',
+          element: <RegisterNew />
+        }
+      ]
+    }
+  ]
+  )
   return (
 
 
     <div className="App">
-      <Routes>
-        <Route path='/' element={<Container />} >
-          <Route path='order' element={<Order />} />
-        </Route>
-      </Routes>
+      <RouterProvider router={router} />
     </div>
   );
 }

@@ -3,20 +3,20 @@ import { Link, Outlet } from 'react-router-dom'
 import { useContext } from 'react'
 import { StateContext } from '../../GlobalState'
 import './Order.css'
-function Order() {
+function Order({handleCloseOrderView}) {
     const context = useContext(StateContext)
     console.log(context.yard);
     return (
-        <div className="order-yard ">
+        <div className="order-yard">
             <div className="overlay-order"></div>
             <div className="order-yard-main">
                 <div className="order-yard-heading">
                     <div className="heading-title">
                         Đặt sân
                     </div>
-                    <Link to='/' className="heading-icon-close">
+                    <div onClick={handleCloseOrderView}  className="heading-icon-close">
                         <i className="bi bi-x-circle"></i>
-                    </Link>
+                    </div >
                 </div>
                 <div className="order-yard-body">
                     <div className="row-order">

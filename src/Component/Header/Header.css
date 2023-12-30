@@ -52,6 +52,7 @@
     color: var(--black);
     padding: 10px 20px;
     transition: all 0.25s linear;
+    text-decoration: none;
 }
 .link_icon:hover {
     color: var(--primary);
