@@ -1,0 +1,129 @@
+.footer {
+    position: relative;
+}
+
+
+.footer__banner {
+    position: relative;
+}
+
+.footer__banner--img {
+    width: 100%;
+    display: block;
+    border-bottom: 5px solid var(--primary-color);
+}
+
+.footer__title {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+}
+
+.footer__title--heading {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--white-color);
+}
+
+.footer__btn {
+    padding: 16px 24px;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-top: 50px;
+    text-align: center;
+    transition: 0.8s;
+    border-radius: 40px;
+    font-weight: 500;
+}
+
+.footer__btn:hover {
+    color: var(--white-color);
+    background: linear-gradient(var(--primary-color), #62a0d8);
+}
+
+.footer__information {
+    background-color: #1a6d1c;
+}
+
+.footer__infomation-contact {
+    margin-top: 32px;
+}
+
+.footer__infomation-content {
+    margin-top: 32px;
+}
+
+.footer__infomation--contact-heading {
+    font-size: 2.8rem;
+    display: inline-block;
+    color: var(--white-color);
+    position: relative;
+}
+
+.footer__infomation--contact-heading::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--white-color);
+}
+
+.footer__infomation--heading {
+    font-size: 1.9rem;
+    color: var(--white-color);
+}
+
+.footer__infomation--contact-list,
+.footer__infomation--list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    color: var(--white-color);
+}
+
+.footer__infomation--contact-address,
+.footer__infomation--contact-email,
+.footer__infomation--contact-phone,
+.footer__infomation--contact-bank,
+.footer__infomation--item {
+    font-size: 1.6rem;
+    line-height: 2.4;
+}
+
+.footer__infomation--contact-name {
+    font-size: 2.4rem;
+    color: var(--white-color);
+    margin: 14px 0;
+    font-weight: 400;
+}
+
+.footer__infomation--contact-address {
+    line-height: 1.4;
+}
+
+.footer__infomation--bank {
+    max-width: 64px;
+    width: 100%;
+    padding-right: 4px;
+}
+
+.footer__infomation--link {
+    color: var(--white-color);
+    transition: 1s;
+}
+
+
+.footer__infomation--link:hover {
+    color: var(--primary-color);
+}
+.footer__infomation-content ul li a{
+	text-decoration: none;
+}

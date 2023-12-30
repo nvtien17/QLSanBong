@@ -1,0 +1,111 @@
+.container {
+
+}
+.header {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, #bffaa3,#36e67c);
+    position: relative;
+    justify-content: center;
+    height: 100px;
+}
+.header .logo {
+    background-image: url(../../App/img/logo.png);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+
+}
+.header_name {
+    text-align: center;
+}
+.name_football_pitches {
+    color: purple;
+    font-size: 2.4rem;
+}
+.name_header_slogan {
+    color: darkblue;
+    font-size: 1.8rem;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    font-size: 1.8rem;
+    box-shadow: 1px 0 5px #ccc;
+}
+.menu {
+    color: var(--black);
+
+}
+.link_list {
+    display: flex;
+    align-items: center;
+
+
+}
+.link_icon {
+    color: var(--black);
+    padding: 10px 20px;
+    transition: all 0.25s linear;
+}
+.link_icon:hover {
+    color: var(--primary);
+    cursor: pointer;
+    opacity: 0.8;
+}
+.subnav {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 20px;
+}
+.search-main {
+    display: flex;
+    align-items: center;
+}
+.input-search {
+    display: flex;
+    align-items: center;
+}
+.img_soccer-logo {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    user-select: none;
+}
+.search-main {
+    flex: 1;
+    max-width: 800px;
+    box-shadow: 1px 1px 20px 10px rgb(151, 241, 141);
+    border-radius: 3px;
+}
+.search_input {
+    flex: 1;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    max-width: 800px;
+    font-size: 1rem;
+    color: var(--black);
+    cursor: text;
+
+}
+.icon_search {
+    padding: 10px 20px;
+    margin: 2px;
+    background-color: var(--primary);
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 200;
+    border-radius: 3px;
+    cursor: pointer;
+}
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
