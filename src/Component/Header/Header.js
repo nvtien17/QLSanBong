@@ -57,14 +57,6 @@ function Heading() {
                     >
                         Đăng ký
                     </Link>
-                    <Link
-
-                        to='register-new'
-                        className='link_icon'
-                    >
-                        Đăng ký new
-                    </Link>
-
                 </div>
             </div>
             <div className="subnav">

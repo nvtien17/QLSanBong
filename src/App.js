@@ -9,9 +9,8 @@ import './App.css';
 import Container from './Component/Container';
 import Layout from "./pages/layout/Layout";
 import Contact from "./pages/contact/Contact";
-import Login from "./pages/login/Login";
-import Register from "./pages/register/Register";
-import RegisterNew  from "./pages/RegisterNew/RegisterNew";
+import Login from "./pages/login/login";
+import Register from "./pages/register/register";
 
 function App() {
   const router = createBrowserRouter([
@@ -35,10 +34,6 @@ function App() {
         {
           path: "/register",
           element: <Register />
-        },
-        {
-          path: '/register-new',
-          element: <RegisterNew />
         }
       ]
     }
