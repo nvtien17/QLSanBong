@@ -9,8 +9,8 @@ import './App.css';
 import Container from './Component/Container';
 import Layout from "./pages/layout/Layout";
 import Contact from "./pages/contact/Contact";
-import Login from "./pages/login/login";
-import Register from "./pages/register/register";
+import Login from "./pages/login/Login";
+import Register from "./pages/register/Register";
 
 function App() {
   const router = createBrowserRouter([
