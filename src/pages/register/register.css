@@ -1,0 +1,52 @@
+.register-container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: rgb(248, 248, 248);
+    padding: 10px;
+}
+.register-title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: xx-large;
+    color: #1a6d1c;
+    text-transform: uppercase;
+}
+.register-textbox {
+    width: 80%;
+    align-self: center;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 0.5px solid grey;
+}
+.register-button {
+    width: 80%;
+    align-self: center;
+    font-size: 15px;
+    border: none;
+    background-color: #1a6d1c;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+.register-button:hover {
+    border: 1px solid #1a6d1c;
+    background-color: white;
+    color: #1a6d1c;
+}
+.link-login {
+    align-self: center;
+    margin: 5px;
+    font-size: 15px;
+}
+.dangnhap {
+    text-decoration: none;
+    color: #1a6d1c;
+    margin-left: 5px;
+}

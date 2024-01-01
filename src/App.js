@@ -36,7 +36,7 @@ function App() {
           path: "/register",
           element: <Register />
         },
-        
+
         {
           path: '/thank-you',
           element: <ThankYouPage />
