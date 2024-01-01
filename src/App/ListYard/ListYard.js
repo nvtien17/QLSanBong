@@ -12,8 +12,8 @@ const ListYard = [
         id: 1,
         name: 'Sân A1',
         category: 7,
-        state: 0,
-        status: 'Sắp có',
+        state: 1,
+        status: 'Sân trống',
         price: 500000,
         img: img0
     },

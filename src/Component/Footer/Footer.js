@@ -84,7 +84,7 @@ function Footer() {
 								<ul className="footer__infomation--list">
 									<li className="footer__infomation--item"><a href="#" className="footer__infomation--link">Sản phẩm nổi bật</a></li>
 									<li className="footer__infomation--item"><a href="#" className="footer__infomation--link">Bộ sưu tập mới</a></li>
-									<li className="footer__infomation--item"><a href="#" className="footer__infomation--link">Bộ sưu tập 2022</a></li>
+									<li className="footer__infomation--item"><a href="#" className="footer__infomation--link">Bộ sưu tập 2024</a></li>
 									<li className="footer__infomation--item"><a href="#" className="footer__infomation--link">Sản phẩm nổi bật</a></li>
 									<li className="footer__infomation--item"><a href="#" className="footer__infomation--link">Sản phẩm khuyến mãi</a></li>
 								</ul>

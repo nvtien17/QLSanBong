@@ -32,9 +32,11 @@ function Heading() {
                     >
                         Trang chủ
                     </Link>
-                    <div className="link_icon">
+                    <Link
+                        to='about'
+                        className='link_icon'>
                         Giới thiệu
-                    </div>
+                    </Link>
                     <Link
 
                         to='contact'
@@ -57,24 +59,10 @@ function Heading() {
                     >
                         Đăng ký
                     </Link>
-                    <Link
-
-                        to='register-new'
-                        className='link_icon'
-                    >
-                        Đăng ký new
-                    </Link>
 
                 </div>
             </div>
-            <div className="subnav">
-                <div className="search-main">
-                    <input className="search_input" type="text" placeholder="Tìm kiếm trên Thế giới bóng đá Nguyên Xá ...." />
-                    <div className="icon_search">
-                        <i className="fas fa-search"></i>
-                    </div>
-                </div>
-            </div>
+
 
         </div>
     )

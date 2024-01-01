@@ -1,0 +1,112 @@
+#contact{
+	font-size: 150%;
+    padding: 50px 100px;
+    background-color:  rgb(253, 244, 233);
+}
+
+.row2{
+	display: flex;
+	justify-content: center;
+}
+.evaluate__user{
+	margin-top: 20px;
+}
+.evaluate {
+    margin-top: 20px;
+    position: relative;
+    background-attachment: fixed;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.evaluate__title {
+    position: absolute;
+    top: -5%;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+
+.evaluate__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:#fff;
+}
+
+.evaluate__user {
+    position: relative;
+    text-align: center;
+    margin-bottom: 48px;
+    padding: 48px 4px 0;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.evaluate__user::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0%;
+    transition: 1.3s;
+    z-index: -1;
+    background: linear-gradient(var(--primary-color), #62a0d8);
+}
+
+.evaluate__user:hover::before {
+    height: 100%;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.evaluate__user:hover .evaluate__user-img img {
+    border: 1px dashed var(--red-color);
+    animation: spin linear 10s infinite alternate;
+
+}
+
+.evaluate__user-img img {
+    max-width: 120px;
+    border-radius: 50%;
+    border: 1px dashed #ccc;
+    padding: 5px;
+    transition: 1.3s;
+    object-fit: cover;
+    height: 113.01px;
+}
+
+
+.evaluate__content-icon--star {
+    color: yellow;
+    margin: 24px 4px 0;
+    font-size: 1.5rem;
+}
+
+.evaluate__content--name {
+    margin: 24px 0;
+    font-size: 1.8rem;
+}
+
+.evaluate__content--desc {
+    font-size: 1.5rem;
+    line-height: 2;
+    font-style: italic;
+    padding: 10px 0;
+}
+.subtitle{
+    margin-left: 40px;
+}
+.contact_info{
+    margin-left: 100px;
+}

@@ -1,0 +1,26 @@
+.about{
+	font-size: 150%;
+	padding: 50px 100px;
+	background-color: rgb(253, 244, 233);
+}
+.about_row p{
+	text-indent: 30px;
+}
+.img_about{
+	width: 40%;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.img_about_list img{
+	width: 30%;
+	flex: 1;
+	margin: 3px;
+}
+.img_about_list{
+	display: flex;
+	flex: 3;
+	flex-wrap: wrap;
+	padding: 0px 40px;
+}
