@@ -115,17 +115,17 @@
 .yard-img{
     width: 150px;
 }
-.order-time-item{
-
+.order-time-item {
     background-color: rgb(22, 239, 188);
     padding: 5px;
     margin: 5px;
     font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s;  /* Thêm hiệu ứng chuyển động */
 }
-.order-time-item:active{
-    background-color: aquamarine;
 
+.order-time-item.clicked {
+    background-color: red;
 }
 .order-time-row{
     display: flex;

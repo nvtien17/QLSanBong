@@ -1,10 +1,25 @@
 import { useEffect } from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Navigate, Outlet } from 'react-router-dom'
 import { useContext } from 'react'
+import { useState } from 'react'
 import { StateContext } from '../../GlobalState'
 import './Order.css'
-function Order({handleCloseOrderView}) {
+import { useNavigate } from 'react-router-dom';
+
+
+
+function Order({ handleCloseOrderView }) {
     const context = useContext(StateContext)
+    const navigate = useNavigate();
+    const [selectedTime, setSelectedTime] = useState(null);
+
+    const handleTimeClick = (time) => {
+        setSelectedTime(time);
+    };
+    const clickOrderYard = () => {
+
+        navigate('/thank-you');
+    };
     console.log(context.yard);
     return (
         <div className="order-yard">
@@ -14,7 +29,7 @@ function Order({handleCloseOrderView}) {
                     <div className="heading-title">
                         Đặt sân
                     </div>
-                    <div onClick={handleCloseOrderView}  className="heading-icon-close">
+                    <div onClick={handleCloseOrderView} className="heading-icon-close">
                         <i className="bi bi-x-circle"></i>
                     </div >
                 </div>
@@ -52,13 +67,33 @@ function Order({handleCloseOrderView}) {
                         </div>
                         <div className="order-time">
                             <div className='order-time-row'>
-                                <div className='order-time-item'>14h-16h</div>
-                                <div className='order-time-item'>16h-18h</div>
+                                <div
+                                    className={`order-time-item ${selectedTime === '14h-16h' ? 'clicked' : ''}`}
+                                    onClick={() => handleTimeClick('14h-16h')}
+                                >
+                                    14h-16h
+                                </div>
+                                <div
+                                    className={`order-time-item ${selectedTime === '16h-18h' ? 'clicked' : ''}`}
+                                    onClick={() => handleTimeClick('16h-18h')}
+                                >
+                                    16h-18h
+                                </div>
                             </div>
 
                             <div className='order-time-row'>
-                                <div className='order-time-item'>18h-20h</div>
-                                <div className='order-time-item'>20h-22h</div>
+                                <div
+                                    className={`order-time-item ${selectedTime === '18h-20h' ? 'clicked' : ''}`}
+                                    onClick={() => handleTimeClick('18h-20h')}
+                                >
+                                    18h-20h
+                                </div>
+                                <div
+                                    className={`order-time-item ${selectedTime === '20h-22h' ? 'clicked' : ''}`}
+                                    onClick={() => handleTimeClick('20h-22h')}
+                                >
+                                    20h-22h
+                                </div>
                             </div>
 
                         </div>
@@ -79,13 +114,14 @@ function Order({handleCloseOrderView}) {
                             Tổng số tiền cần thanh toán :
                         </div>
                         <div className="row-item-value">
-                        {context.yard.price * 2} đ
+                            {context.yard.price * 2} đ
                         </div>
+
                     </div>
 
 
                     <div className="bottom-order">
-                        <div className="btn-order-yard">
+                        <div className="btn-order-yard" onClick={clickOrderYard}  >
                             Đặt sân
                         </div>
                     </div>

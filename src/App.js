@@ -12,6 +12,7 @@ import Contact from "./pages/contact/Contact";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
 import RegisterNew  from "./pages/RegisterNew/RegisterNew";
+import ThankYouPage from "./Component/ThankyouPage/ThankYouPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -39,6 +40,10 @@ function App() {
         {
           path: '/register-new',
           element: <RegisterNew />
+        },
+        {
+          path: '/thank-you',
+          element: <ThankYouPage />
         }
       ]
     }
